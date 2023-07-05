@@ -3,8 +3,8 @@
     public class FolderDTO
     {
         public string RootFolderName { get; set; }
-        public List<string> DllFolder { get; set; }
+        public List<string> DllsFolder { get; set; }
         public List<string> ImagesFolder { get; set; }
-        public List<string> LanguageFolder { get; set; }
+        public List<string> LanguagesFolder { get; set; }
     }
 }

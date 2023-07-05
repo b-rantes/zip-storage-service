@@ -86,9 +86,9 @@ namespace Infrastructure.Repositories.ZipFileRepository
                 var rootFolder = new FolderDTO
                 {
                     RootFolderName = Path.GetFileName(zipFilePath),
-                    DllFolder = new List<string>(),
+                    DllsFolder = new List<string>(),
                     ImagesFolder = new List<string>(),
-                    LanguageFolder = new List<string>()
+                    LanguagesFolder = new List<string>()
                 };
 
                 ReadFilesInZipSubFolders(zipFilePath, rootFolder);
@@ -138,7 +138,7 @@ namespace Infrastructure.Repositories.ZipFileRepository
 
                     if (IsFromPath(entry, DllPath))
                     {
-                        parentFolder.DllFolder.Add(file);
+                        parentFolder.DllsFolder.Add(file);
                     }
 
                     if (IsFromPath(entry, ImagesPath))
@@ -148,7 +148,7 @@ namespace Infrastructure.Repositories.ZipFileRepository
 
                     if (IsFromPath(entry, LanguagesPath))
                     {
-                        parentFolder.LanguageFolder.Add(file);
+                        parentFolder.LanguagesFolder.Add(file);
                     }
                 }
             }
