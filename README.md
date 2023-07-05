@@ -27,7 +27,7 @@ A more detailed explanation of each route can be found at the swagger doc
 - In **launch.settings.json** launch the app preferably **in port 5000**
 - Access the **swagger** in your browser at **/swagger**
 
-###Frontend
+### Frontend
 Open the folder in your command line
 ```shell
 cd ./zip-storage-service/ZipStorageClient/zip-storage-frontend
